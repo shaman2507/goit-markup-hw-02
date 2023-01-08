@@ -1,7 +1,4 @@
 html,
-body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-}
 
 :root {
     --main-title-color: #2E2F42;
@@ -17,6 +14,23 @@ body {
     --portfolio-btn-background-color: #F4F4FD;
     --portfolio-btn-border-color: #E7E9FC;
     --hover-focus-color: #404BBF;
+    --header-logo-font-family: 'Raleway', sans-serif;
+    --header-logo-font-weight: 800;
+    --header-logo-font-size: 18px;
+    --header-logo-line-height: 1.33;
+    --header-logo-letter-spacing: 0.03em;
+    --font-size: 16px;
+    --font-size-title: 20px;
+    --line-height: 1.5;
+    --letter-spacing: 0.02em;
+    --font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .header {
@@ -28,21 +42,17 @@ body {
 }
 
 .header-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
+    font-family: var(--header-logo-font-family);
+    font-weight: var(--header-logo-font-weight);
+    font-size: var(--header-logo-font-size);
+    line-height: var(--header-logo-line-height);
+    letter-spacing: var(--header-logo-letter-spacing);
     color: var(--main-title-color);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .accent {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
     color: var(--logo-color);
 }
 
@@ -51,10 +61,6 @@ body {
 }
 
 .header-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     
 }
 
@@ -69,10 +75,9 @@ body {
 }
 
 .header-address {
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
     word-spacing: normal;
 }
 
@@ -81,6 +86,10 @@ body {
 }
 
 .header-address-link {
+    font-weight: 400;
+    font-style: var(--font-style);
+    font-size: var(--font-size);
+    line-height: 24px;
     text-decoration: none;
     color: var(--main-text-color);
 }
@@ -97,11 +106,19 @@ body {
 .banner-title {
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
+    letter-spacing: var(--letter-spacing);
     color: var(--banner-title-color);
 }
 
 .banner-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    width: 169px;
+    height: 56px;
+    left: 636px;
+    top: 428px;
     background: var(--logo-color);
     border-radius: 4px;
     color: var(--banner-btn-color);
@@ -146,16 +163,12 @@ body {
 
 .main-subtitle {
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--font-size-title);
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--main-title-color);
 }
 
 .main-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--main-text-color);
 }
 
@@ -188,28 +201,22 @@ body {
 }
 
 .footer-logo {
-    font-family: 'Raleway',sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
+    font-family: var(--header-logo-font-family);
+    font-weight: var(--header-logo-font-weight);
+    font-size: var(--header-logo-font-size);
+    line-height: var(--header-logo-line-height);
+    letter-spacing: var(--header-logo-letter-spacing);
     color: var(--footer-logo-color);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .footer-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--footer-text-color);
 }
 
 .portfolio {
 
-}
-
-.portfolio-nav {
-    
 }
 
 .portfolio-list {  
@@ -222,8 +229,8 @@ body {
 
 .portfolio-btn {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     background: var(--portfolio-btn-background-color);
     border: 1px solid var(--portfolio-btn-border-color);
     border-radius: 4px;
@@ -244,18 +251,22 @@ body {
     color: var(--banner-title-color);
 }
 
+.project-link {
+    text-decoration: none;
+}
+
 .projects-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+    letter-spacing: var(--letter-spacing);
     color: var(--main-title-color);
 }
 
 .projects-text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
     color: var(--main-text-color);
 }
