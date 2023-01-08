@@ -1,16 +1,21 @@
 html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
 :root {
     --main-title-color: #2E2F42;
     --main-text-color: #434455;
+    --main-team-color: #F4F4FD;
     --logo-color: #4D5AE5;
     --banner-title-color: #FFFFFF;
+    --banner-background-color: #2E2F42;
+    --banner-btn-color: #4D5AE5;
     --footer-logo-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
     --portfolio-btn-color: #4D5AE5;
+    --portfolio-btn-background-color: #F4F4FD;
+    --portfolio-btn-border-color: #E7E9FC;
     --hover-focus-color: #404BBF;
 }
 
@@ -86,7 +91,7 @@ body {
 }
 
 .banner {
-    background: #2E2F42;
+    background: var(--banner-background-color);
 }
 
 .banner-title {
@@ -97,14 +102,14 @@ body {
 }
 
 .banner-btn {
-    background: #4D5AE5;
+    background: var(--logo-color);
     border-radius: 4px;
-    color: var(--banner-title-color);
+    color: var(--banner-btn-color);
 }
 
 .banner-btn:hover,
 .banner-btn:focus {
-    background: #404BBF;
+    background: var(--hover-focus-color);
 }
 
 .main-page {
@@ -167,7 +172,7 @@ body {
 }
 
 .main-team {
-    background: #F4F4FD;
+    background: var(--main-team-color);
 }
 
 .main-team-list {
@@ -219,15 +224,16 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--portfolio-btn-background-color);
+    border: 1px solid var(--portfolio-btn-border-color);
     border-radius: 4px;
     color: var(--portfolio-btn-color);
 }
 .portfolio-btn:hover {
-    background: #404BBF;
+    background: var(--hover-focus-color);
     color: var(--banner-title-color);
     flex: none;
+    cursor: pointer;
 }
 
 .projects-list {
