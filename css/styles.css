@@ -150,7 +150,13 @@ body {
 }
 
 .main-title {
-
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    text-transform: capitalize;
+    color: var(--banner-background-color);
 }
 
 .main-list {
@@ -169,6 +175,9 @@ body {
 }
 
 .main-text {
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+    letter-spacing: var(--letter-spacing);
     color: var(--main-text-color);
 }
 
@@ -219,6 +228,10 @@ body {
 
 }
 
+.portfolio-page {
+
+}
+
 .portfolio-list {  
     list-style-type: none;
 }
@@ -235,6 +248,7 @@ body {
     border: 1px solid var(--portfolio-btn-border-color);
     border-radius: 4px;
     color: var(--portfolio-btn-color);
+    letter-spacing: 0.04em;
 }
 .portfolio-btn:hover {
     background: var(--hover-focus-color);
